@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit Blog</div>
+    <form class="ui form" action="/blogs/<%= blog._id %>?_method=PUT" method="POST"> <!-- changed the action(needs "id") -->
+                                                                                     <!-- "nmp install method-override --save", "require it in the "app.js",  --> 
+                                                                                     <!-- also added "?_method=PUT" to override the "method="POST" because html cannot process PUT requests -->
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="blog[title]" value="<%= blog.title %>"> <!-- replaced the "placeholder" with "value", so that the field is pre-filled -->
+        </div>
+        <div class="field">
+            <label>Image URL</label>
+            <input type="text" name="blog[image]" value= "<%= blog.image %>"> <!-- replaced the "placeholder" with "value", so that the field is pre-filled -->
+        </div>
+        <div class="field">
+            <label>Blog Content</label>
+            <textarea name="blog[body]"><%= blog.body %></textarea> <!-- added the pre-existing blog.body in between the "textarea" tags -->
+        </div>
+        <button class="ui blue basic button">Update Blog Post!</button>
+    </form>
+</div>
+
+<% include partials/footer %>

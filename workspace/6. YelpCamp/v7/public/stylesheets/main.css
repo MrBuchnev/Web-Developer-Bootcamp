@@ -1,0 +1,19 @@
+.body {
+    margin-top: 70px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.row {
+    margin-top: 10px;
+}

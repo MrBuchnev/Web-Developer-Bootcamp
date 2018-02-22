@@ -1,0 +1,15 @@
+{
+  "name": "samplepackage",
+  "version": "1.0.0",
+  "description": "A sample json file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Buchnev",
+  "license": "ISC",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "knock-knock": "^2.0.0"
+  }
+}
